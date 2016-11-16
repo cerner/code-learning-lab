@@ -38,7 +38,7 @@ Lab 10:
 
 Lab 14:
 
-Launch.html modifications:
+- Launch.html modifications:
 
 ```
 Add no-cache meta tags to make prototyping easier:
@@ -48,11 +48,11 @@ Add no-cache meta tags to make prototyping easier:
 <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 <meta http-equiv="pragma" content="no-cache" />
 
-Modify  'scope': 
+- Modify  'scope': 
 
 user/Patient.read user/MedicationStatement.read user/MedicationStatement.write
 ```
 
-Index.html modifications: http://bit.ly/2fSCc0Q
+- Index.html modifications: http://bit.ly/2fSCc0Q
 
 
