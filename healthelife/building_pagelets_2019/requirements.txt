@@ -1,0 +1,5 @@
+flask
+requests
+python-jose
+fhirclient == 1.0.3
+pyopenssl
