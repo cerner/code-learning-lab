@@ -2,7 +2,7 @@
 
 ## Prerequisits to run this project
 
-* [Python][Python] 3.4 or newer installed
+* [Python][Python] 3.4 or newer installed, and accessible from your PATH.
 * Privileges to [update your hosts file][HostFileInstructions]
 * Privileges to accept a self-signed certificate for your browser
 * Privileges to run commands in a shell or command prompt
@@ -23,8 +23,13 @@
     ```
 3. Start the server:
     ```
+	# macOS or *nix users:
     sh run.sh
     ```
+	
+	__Windows users__: Open the `run.bat` file.
+
+	
 4. Visit [the pagelet][ThePagelet] in your browser.
 5. Accept the self-signed certificate.
 

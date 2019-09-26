@@ -1,5 +1,0 @@
-What happens here?
-
-
-# Test pagelet
-127.0.0.1 localpagelet.test
