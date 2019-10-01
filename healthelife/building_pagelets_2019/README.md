@@ -33,11 +33,15 @@
 4. Visit [the pagelet][ThePagelet] in your browser.
 5. Accept the self-signed certificate. After you accept it, you'll see a 400 error page. You can close this tab.
 
-## Demo the finished product
+## Demo the finished product - Procedures widget
 Visit [HealtheLife][HealtheLife] in your browser to see the finished pagelet first. Use these credentials:
 
 * Username: `GMansoor01`
 * Password: `Cerner01`
+
+The __Procedures widget__ (main column, 2nd from the top) is a pagelet running on your local web server.
+
+![Example Screenshot][]
 
 [Python]: https://www.python.org/downloads/
 [ThePagelet]: https://localpagelet.test:8000/
@@ -45,3 +49,4 @@ Visit [HealtheLife][HealtheLife] in your browser to see the finished pagelet fir
 [HostFileInstructions]: https://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/
 [requirements.txt]: https://raw.githubusercontent.com/cerner/code-learning-lab/master/healthelife/building_pagelets_2019/requirements.txt
 [run.bat]: https://raw.githubusercontent.com/cerner/code-learning-lab/master/healthelife/building_pagelets_2019/run.bat
+[Example Screenshot]: examples/procedures_screenshot.png 
