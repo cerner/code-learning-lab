@@ -9,21 +9,21 @@
 
 ## Setup
 
-1. Update your host file.
+1. Update /etc/hosts by appending this line:
     ```
-    # macOS or *nix users:
-    sudo sh update_hosts.sh
+    127.0.0.1 localpagelet.test 
     ```
 
-    __Windows users__: follow [these instructions][HostFileInstructions], pasting in the contents of this project's `hosts` file.
+    __Windows users__: follow [these instructions][HostFileInstructions], appending the same line.
  
 2. Install dependencies:
     ```
-    pip install -r requirements.txt 
+    pip3 install -r requirements.txt 
     ```
+    	
+    
 3. Start the server:
     ```
-	# macOS or *nix users:
     sh run.sh
     ```
 	
@@ -31,7 +31,7 @@
 
 	
 4. Visit [the pagelet][ThePagelet] in your browser.
-5. Accept the self-signed certificate.
+5. Accept the self-signed certificate. After you accept it, you'll see a 400 error page. You can close this tab.
 
 ## Demo the finished product
 Visit [HealtheLife][HealtheLife] in your browser to see the finished pagelet first. Use these credentials:
