@@ -2,9 +2,8 @@ from flask import Flask, url_for, render_template, request, abort, make_response
 import requests
 from jose import jwt
 from fhirclient import client
-import fhirclient.models.patient as p
-import fhirclient.models.immunization as i
-import fhirclient.models.procedure as pro
+import fhirclient.models.patient as fhir_patient
+import fhirclient.models.procedure as fhir_procedure
 
 
 app = Flask(__name__)
@@ -59,21 +58,14 @@ def smart_server():
 
 def lookup_patient(federated_principal_alias):
     identifier = f'{CERNER_FPA_URN}|{federated_principal_alias}'
-    search = p.Patient.where(struct={'identifier': identifier})
+    search = fhir_patient.Patient.where(struct={'identifier': identifier})
     patients = search.perform_resources(smart_server())
     
     return {'name': patients[0].name[0].text, 'id': patients[0].id}
 
-# def lookup_immunizations(patient):
-#     search =i.Immunization.where(struct={'patient': patient['id']})
-#     immunizations = search.perform_resources(smart_server())
-
-#     return [{'vaccine': imm.vaccineCode.text, 'date': imm.date.date} for imm in immunizations]
-
 def lookup_procedures(patient):
-    search =pro.Procedure.where(struct={'patient': patient['id']})
+    search =fhir_procedure.Procedure.where(struct={'patient': patient['id']})
     procedures = search.perform_resources(smart_server())
-
 
     return [{'name': pro.code.text, 'date': pro.performedDateTime.date} if pro.performedDateTime 
             else {'name': pro.code.text} 
@@ -89,7 +81,7 @@ app.jinja_env.filters['date'] = format_date
 
     
 @app.route('/')
-def pagelet():
+def procedures():
 
     try:
         encoded_token = request.args['bcs_token']
@@ -100,7 +92,7 @@ def pagelet():
     patient = lookup_patient(token['sub'])
     procedures = lookup_procedures(patient)
 
-    content = render_template('hello.html', 
+    content = render_template('procedures.html', 
         procedures=procedures,
         stylesheet=url_for('static', filename='style.css')
     )

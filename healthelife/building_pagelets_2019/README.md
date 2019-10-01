@@ -15,21 +15,21 @@
     ```
 
     __Windows users__: follow [these instructions][HostFileInstructions], appending the same line.
- 
-2. Install dependencies:
+2. Make a new folder for your project.
+2. Download [requirements.txt][] to your project folder.
+3. Open a terminal to your project folder (__Windows users__: use cmd.exe).
+4. Install the requirements:
     ```
     pip3 install -r requirements.txt 
     ```
-    	
     
 3. Start the server:
     ```
-    sh run.sh
+    env FLASK_ENV=development FLASK_APP=pagelet.py flask run  --port=8000 --cert=cert.crt --key=pkey.key
     ```
-	
-	__Windows users__: Open the `run.bat` file.
+    
+    __Windows users__: Download [run.bat][] to your project folder, then execute `run.bat` in cmd.exe.
 
-	
 4. Visit [the pagelet][ThePagelet] in your browser.
 5. Accept the self-signed certificate. After you accept it, you'll see a 400 error page. You can close this tab.
 
@@ -43,3 +43,5 @@ Visit [HealtheLife][HealtheLife] in your browser to see the finished pagelet fir
 [ThePagelet]: https://localpagelet.test:8000/
 [HealtheLife]: http://chc2019-pageletclass.patientportal.us.healtheintent.com/
 [HostFileInstructions]: https://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/
+[requirements.txt]: https://raw.githubusercontent.com/cerner/code-learning-lab/master/healthelife/building_pagelets_2019/requirements.txt
+[run.bat]: https://raw.githubusercontent.com/cerner/code-learning-lab/master/healthelife/building_pagelets_2019/run.bat
