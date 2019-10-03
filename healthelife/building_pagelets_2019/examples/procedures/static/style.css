@@ -1,0 +1,82 @@
+h1 {
+  font: 400 20px Roboto, sans-serif;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  --padding: 10px;
+  --margin: 10px;
+  --border-color: rgb(222, 223, 224);
+  --border-width: 1px;
+  --border-style: solid;
+
+  font: 14px/20px Helvetica Neue, Helvetica, Arial, sans-serif;
+  background: white;
+  border-radius: 3px;
+  padding-top: var(--padding);
+}
+
+.header {
+  text-align: center;
+  margin: var(--margin) 0;
+}
+
+.content {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: var(--border-width) var(--border-style) var(--border-color);
+  border-top: var(--border-width) var(--border-style) var(--border-color);
+}
+
+.footer {
+  text-align: center;
+  padding: var(--padding) 0;
+}
+
+.procedures {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.procedure:last-child {
+  border-bottom: none;
+}
+
+.procedure {
+  border-bottom: var(--border-width) var(--border-style) var(--border-color);
+  padding-left: var(--padding);
+  margin-bottom: 0;
+}
+
+.name {
+  margin-top: var(--margin);
+  margin-bottom: 0;
+}
+
+.date {
+  color: rgb(105, 108, 110);
+  font-size: 12px;
+  line-height: 15px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.button {
+  border: 1px solid rgb(0, 27, 42);
+  font: 14px/20px Roboto, sans-serif;
+  background: rgb(0, 76, 118);
+  padding: 4px 10px;
+  border-radius: 3.5px;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+}
