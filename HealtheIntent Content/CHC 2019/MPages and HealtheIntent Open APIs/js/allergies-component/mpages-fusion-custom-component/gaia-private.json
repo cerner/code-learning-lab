@@ -1,0 +1,15 @@
+{
+    "milproxy": {
+        "username": "",
+        "domain": ""
+    },
+    "contentserver": {
+        "folders": {
+            "staticContent": "",
+            "css": "",
+            "i18n": "",
+            "source": "",
+            "bedrockMocks": ""
+        }
+    }
+}

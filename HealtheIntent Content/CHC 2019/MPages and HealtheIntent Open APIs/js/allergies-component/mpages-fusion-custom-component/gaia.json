@@ -1,0 +1,149 @@
+{
+    "webpack": {
+        "targets": {
+            "dev": {
+                "outputFolder": "./dist",
+                "fileName": "js/MPagesFusionCustomComponent.js",
+                "cssFileName": "css/MPagesFusionCustomComponent.css",
+                "sourceFolders": [
+                    "./src"
+                ],
+                "externals": {
+                    "MPageFusion": "MPageFusion",
+                    "LegacyAdapter": "LegacyAdapter",
+                    "FusionComponent": "FusionComponent",
+                    "MP_Util": "MP_Util",
+                    "MP_ScratchPad": "MP_ScratchPad",
+                    "CERN_EventListener": "CERN_EventListener",
+                    "EventListener": "EventListener",
+                    "FusionComponentScriptRequest": "FusionComponentScriptRequest",
+                    "ScriptRequest": "ScriptRequest",
+                    "i18n": "i18n",
+                    "FormDateSelector": "FormDateSelector",
+                    "CERN_Platform": "CERN_Platform",
+                    "MPAGES_EVENT": "MPAGES_EVENT",
+                    "mp_formatter": "mp_formatter",
+                    "MPAGE_LOCALE": "MPAGE_LOCALE",
+                    "MPageComponent": "MPageComponent",
+                    "RTMSTimer": "RTMSTimer",
+                    "CCLLINK": "CCLLINK"
+                },
+                "includePolyfills": true,
+                "entryPoints": [
+                    "./src/main/js/cerner/mpagedev/component/MPagesFusionCustomComponent.js",
+                    "./src/main/less/cerner/mpagedev/component/MPagesFusionCustomComponent.less"
+                ],
+                "devtool": "inline-source-map",
+                "envify": false,
+                "includeCSS": true,
+                "minify": false
+            },
+            "default": {
+                "outputFolder": "./dist",
+                "fileName": "js/MPagesFusionCustomComponent.js",
+                "cssFileName": "css/MPagesFusionCustomComponent.css",
+                "sourceFolders": [
+                    "./src"
+                ],
+                "externals": {
+                    "MPageFusion": "MPageFusion",
+                    "LegacyAdapter": "LegacyAdapter",
+                    "FusionComponent": "FusionComponent",
+                    "MP_Util": "MP_Util",
+                    "MP_ScratchPad": "MP_ScratchPad",
+                    "CERN_EventListener": "CERN_EventListener",
+                    "EventListener": "EventListener",
+                    "FusionComponentScriptRequest": "FusionComponentScriptRequest",
+                    "ScriptRequest": "ScriptRequest",
+                    "i18n": "i18n",
+                    "FormDateSelector": "FormDateSelector",
+                    "CERN_Platform": "CERN_Platform",
+                    "MPAGES_EVENT": "MPAGES_EVENT",
+                    "mp_formatter": "mp_formatter",
+                    "MPAGE_LOCALE": "MPAGE_LOCALE",
+                    "MPageComponent": "MPageComponent",
+                    "RTMSTimer": "RTMSTimer",
+                    "CCLLINK": "CCLLINK",
+                    "ResultRangeSelection": "ResultRangeSelection",
+                    "ResultRangeSelectionUtility": "ResultRangeSelectionUtility"
+                },
+                "includePolyfills": false,
+                "entryPoints": [
+                    "./src/main/js/cerner/mpagedev/component/MPagesFusionCustomComponent.js",
+                    "./src/main/less/cerner/mpagedev/component/MPagesFusionCustomComponent.less"
+                ],
+                "minify": true,
+                "envify": true,
+                "includeCSS": false
+            }
+        }
+    },
+    "unit-testing": {
+        "browser": [
+            "Chrome",
+            "IE",
+            "PhantomJS"
+        ],
+        "singleRun": true,
+        "srcPath": "./src/main",
+        "specPath": "./src/__tests__/unit-tests/spec",
+        "mockPath": "./src/__tests__/unit-tests/mock",
+        "usesFusion": true,
+        "target": "default",
+        "externals": {
+            "MPageFusion": "MPageFusion",
+            "LegacyAdapter": "LegacyAdapter",
+            "FusionComponent": "FusionComponent",
+            "MP_Util": "MP_Util",
+            "MP_ScratchPad": "MP_ScratchPad",
+            "CERN_EventListener": "CERN_EventListener",
+            "EventListener": "EventListener",
+            "FusionComponentScriptRequest": "FusionComponentScriptRequest",
+            "ScriptRequest": "ScriptRequest",
+            "i18n": "i18n",
+            "FormDateSelector": "FormDateSelector",
+            "CERN_Platform": "CERN_Platform",
+            "MPAGES_EVENT": "MPAGES_EVENT",
+            "mp_formatter": "mp_formatter",
+            "MPAGE_LOCALE": "MPAGE_LOCALE",
+            "MPageComponent": "MPageComponent",
+            "RTMSTimer": "RTMSTimer",
+            "CCLLINK": "CCLLINK",
+            "ResultRangeSelection": "ResultRangeSelection",
+            "ResultRangeSelectionUtility": "ResultRangeSelectionUtility"
+        },
+        "unitTestPath": "./src/__tests__/unit-tests",
+        "testRunner": "KARMA",
+        "spyPath": "./src/__tests__/unit-tests/spy"
+    },
+    "whatsupdoc": {
+        "files": "./src/**/*.js"
+    },
+    "livedev": {
+        "cclProgram": "",
+        "programParams": "",
+        "sourceCodeLocation": "",
+        "webServiceUrl": "",
+        "cssLocation": "",
+        "i18nLocation": "",
+        "isWebpackEnabled": true,
+        "isBedrockEnabled": false,
+        "bedrockMocksLocation": "",
+        "isWebpackAutoRefreshEnabled": true
+    },
+    "injector": {
+        "settings": {
+            "targetUrl": "http://localhost:8081/mil/",
+            "prefix": ""
+        },
+        "urls": {
+            ".*mp_unified_driver.*": {
+                "top": [],
+                "bottom": [
+                    "http://localhost:7070/js/MPagesFusionCustomComponent.js",
+                    "http://localhost:7070/webpack-dev-server.js"
+                ]
+            }
+        }
+    }
+}
