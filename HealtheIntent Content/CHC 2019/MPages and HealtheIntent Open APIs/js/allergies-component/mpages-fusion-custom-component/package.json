@@ -18,8 +18,8 @@
     "test:browser": "gaia unit-testing"
   },
   "devDependencies": {
-    "mpage-gaia": "^2.3.1",
-    "gaia-preset-core": "^4.3.0"
+    "mpage-gaia": "http://mpages-gaia.cerner.com/download/<TOKEN_ID>/mpage-gaia-2.1.1.tgz",
+    "gaia-preset-public": "http://mpages-gaia.cerner.com/download/<TOKEN_ID>/gaia-preset-public-1.1.0.tgz"
   },
   "projectType": "MPages"
 }
