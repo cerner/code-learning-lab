@@ -68,7 +68,19 @@ Now that you've seen the demo, get started building your own version from a skel
     ```
     
     __Windows users__: Execute `run.bat` in cmd.exe.
-4. Follow along!
+4. Follow along with the lab to build it out.
+
+## Running your own
+Just like how you ran the demo, just run the commands from your skeleton folder:
+
+1. Start the server:
+    ```
+    env FLASK_ENV=development FLASK_APP=pagelet.py flask run  --port=8000 --cert=cert.crt --key=pkey.key
+    ```
+    
+    __Windows users__: Execute `run.bat` in cmd.exe.
+
+2. Visit [HealtheLife][HealtheLife].
 
 [Python]: https://www.python.org/downloads/
 [ThePagelet]: https://localpagelet.test:8000/
