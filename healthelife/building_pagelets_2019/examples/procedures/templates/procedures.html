@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" hidden>
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="{{stylesheet}}" />
@@ -13,7 +13,7 @@
 
 <script type="text/javascript">
     window.addEventListener('load', function () {
-        $HL.App.init({acls: ["https://chc2019-pageletclass.patientportal.us.healtheintent.com"]});
+        $HL.App.init({acls: ["{{trusted_origin}}"]});
 
         document.querySelector(".button").addEventListener("click", function () {
             $HL.App.routeTo({"path": "/pages/health_record/procedures"});

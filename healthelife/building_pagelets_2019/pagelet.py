@@ -21,6 +21,9 @@ def process_token(encoded_token):
     return {'sub': DEMO_USER_FPA}
 
 def prevent_clickjacking(response, token):
+    response.headers['Content-Security-Policy'] = "frame-ancestors  'none'"
+    response.headers['X-Frame-Options'] = "SAMEORIGIN"
+
     return response
 
 def lookup_patient(token):

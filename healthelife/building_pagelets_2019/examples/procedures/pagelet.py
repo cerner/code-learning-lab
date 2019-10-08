@@ -141,6 +141,7 @@ def procedures():
     procedures = lookup_procedures(patient)
 
     content = render_template('procedures.html', 
+        trusted_origin=token['iss'],
         procedures=procedures,
         stylesheet=url_for('static', filename='style.css')
     )
