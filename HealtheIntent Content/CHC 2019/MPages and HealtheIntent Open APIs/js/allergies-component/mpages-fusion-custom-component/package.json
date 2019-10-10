@@ -1,0 +1,25 @@
+{
+  "name": "mpages-fusion-custom-component",
+  "version": "1.0.0",
+  "description": "An MPages Fusion Custom Component",
+  "keywords": [
+    "MPageComponent",
+    "FusionComponent",
+    "MPagesFusionCustomComponent"
+  ],
+  "homepage": "",
+  "scripts": {
+    "build": "gaia webpack",
+    "build:dev": "gaia webpack target=dev",
+    "build:watch": "gaia webpack:startDevServer target=dev",
+    "gaia": "gaia",
+    "lint": "gaia linter:cli maxWarnings=0",
+    "test": "gaia unit-testing cli=true",
+    "test:browser": "gaia unit-testing"
+  },
+  "devDependencies": {
+    "mpage-gaia": "http://mpages-gaia.cerner.com/download/<TOKEN_ID>/mpage-gaia-2.1.1.tgz",
+    "gaia-preset-public": "http://mpages-gaia.cerner.com/download/<TOKEN_ID>/gaia-preset-public-1.1.0.tgz"
+  },
+  "projectType": "MPages"
+}

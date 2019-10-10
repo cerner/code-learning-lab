@@ -1,0 +1,222 @@
+{
+	"data": {
+		"ACTIVITY_COUNT": 7,
+		"ACTIVITY": [{
+			"ACTIVITY_ID": 1.0,
+			"ACTIVITY_NAME": "Non Stop Walking",
+			"DAYS_PER_WEEK": 4,
+			"ACTIVITY_LEVEL": "Low Actitivity Level",
+            "DURATION": 120,
+            "WEEKLY_DATA": [
+                {
+                    "CALORIES_BURNT": 70
+                },
+                {
+                    "CALORIES_BURNT": 0.0
+                },
+                {
+                    "CALORIES_BURNT": 70
+                },
+                {
+                    "CALORIES_BURNT": 0.0
+                },
+                {
+                    "CALORIES_BURNT": 70
+                },
+                {
+                    "CALORIES_BURNT": 0.0
+                },
+                {
+                    "CALORIES_BURNT": 0.0
+                }
+            ]
+		}, {
+			"ACTIVITY_ID": 2.0,
+			"ACTIVITY_NAME": "Playing Ping Pong",
+			"DAYS_PER_WEEK": 2,
+			"ACTIVITY_LEVEL": "Low Actitivity Level",
+			"DURATION": 60,
+            "WEEKLY_DATA": [
+                {
+                    "CALORIES_BURNT": 147
+                },
+                {
+                    "CALORIES_BURNT": 0.0
+                },
+                {
+                    "CALORIES_BURNT": 147
+                },
+                {
+                    "CALORIES_BURNT": 0.0
+                },
+                {
+                    "CALORIES_BURNT": 0.0
+                },
+                {
+                    "CALORIES_BURNT": 0.0
+                },
+                {
+                    "CALORIES_BURNT": 0.0
+                }
+            ]
+		}, {
+			"ACTIVITY_ID": 3.0000,
+			"ACTIVITY_NAME": "Raking",
+			"DAYS_PER_WEEK": 1,
+			"ACTIVITY_LEVEL": "Low Actitivity Level",
+            "DURATION": 90,
+            "WEEKLY_DATA": [
+                {
+                    "CALORIES_BURNT": 0.0
+                },
+                {
+                    "CALORIES_BURNT": 0.0
+                },
+                {
+                    "CALORIES_BURNT": 0.0
+                },
+                {
+                    "CALORIES_BURNT": 0.0
+                },
+                {
+                    "CALORIES_BURNT": 0.0
+                },
+                {
+                    "CALORIES_BURNT": 0.0
+                },
+                {
+                    "CALORIES_BURNT": 350
+                }
+            ]
+		}, {
+			"ACTIVITY_ID": 4.0,
+			"ACTIVITY_NAME": "Jogging",
+			"DAYS_PER_WEEK": 3,
+			"ACTIVITY_LEVEL": "Moderate Actitivity Level",
+            "DURATION": 90,
+            "WEEKLY_DATA": [
+                {
+                    "CALORIES_BURNT": 0.0
+                },
+                {
+                    "CALORIES_BURNT": 190
+                },
+                {
+                    "CALORIES_BURNT": 0.0
+                },
+                {
+                    "CALORIES_BURNT": 190
+                },
+                {
+                    "CALORIES_BURNT": 0.0
+                },
+                {
+                    "CALORIES_BURNT": 190
+                },
+                {
+                    "CALORIES_BURNT": 0.0
+                }
+            ]
+		}, {
+			"ACTIVITY_ID": 5.0,
+			"ACTIVITY_NAME": "Stretching",
+			"DAYS_PER_WEEK": 2,
+			"ACTIVITY_LEVEL": "Moderate Actitivity Level",
+            "DURATION": 60,
+            "WEEKLY_DATA": [
+                {
+                    "CALORIES_BURNT": 0.0
+                },
+                {
+                    "CALORIES_BURNT": 150
+                },
+                {
+                    "CALORIES_BURNT": 0.0
+                },
+                {
+                    "CALORIES_BURNT": 150
+                },
+                {
+                    "CALORIES_BURNT": 0.0
+                },
+                {
+                    "CALORIES_BURNT": 0.0
+                },
+                {
+                    "CALORIES_BURNT": 0.0
+                }
+            ]
+		}, {
+			"ACTIVITY_ID": 6.0,
+			"ACTIVITY_NAME": "Compound Exercises",
+			"DAYS_PER_WEEK": 2,
+			"ACTIVITY_LEVEL": "Vigorous Actitivity Level",
+			"CALORIES_BURNT": 250,
+			"DURATION": 60,
+            "WEEKLY_DATA": [
+                {
+                    "CALORIES_BURNT": 0.0
+                },
+                {
+                    "CALORIES_BURNT": 0.0
+                },
+                {
+                    "CALORIES_BURNT": 250
+                },
+                {
+                    "CALORIES_BURNT": 0.0
+                },
+                {
+                    "CALORIES_BURNT": 250
+                },
+                {
+                    "CALORIES_BURNT": 0.0
+                },
+                {
+                    "CALORIES_BURNT": 0.0
+                }
+            ]
+		}, {
+			"ACTIVITY_ID": 7.0,
+			"ACTIVITY_NAME": "Circuit Training",
+			"DAYS_PER_WEEK": 1,
+			"ACTIVITY_LEVEL": "Vigorous Actitivity Level",
+			"CALORIES_BURNT": 300,
+			"DURATION": 40,
+            "WEEKLY_DATA": [
+                {
+                    "CALORIES_BURNT": 0.0
+                },
+                {
+                    "CALORIES_BURNT": 0.0
+                },
+                {
+                    "CALORIES_BURNT": 0.0
+                },
+                {
+                    "CALORIES_BURNT": 0.0
+                },
+                {
+                    "CALORIES_BURNT": 0.0
+                },
+                {
+                    "CALORIES_BURNT": 300
+                },
+                {
+                    "CALORIES_BURNT": 0.0
+                }
+            ]
+		}],
+		"ACTIVITY_LEVELS": [{
+			"LEVEL_NAME": "Low Actitivity Level",
+			"LEVEL_ID": 987654.0
+		}, {
+			"LEVEL_NAME": "Moderate Actitivity Level",
+			"LEVEL_ID": 876543.0
+		}, {
+			"LEVEL_NAME": "Vigorous Actitivity Level",
+			"LEVEL_ID": 765432.0
+		}],
+		"ACTIVITY_LEVEL_COUNT": 3
+	}
+}
