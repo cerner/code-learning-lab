@@ -1,0 +1,1196 @@
+{
+  "resourceType": "Patient",
+  "id": "4342008",
+  "meta": {
+    "versionId": "230",
+    "lastUpdated": "2019-09-24T18:47:27.000Z"
+  },
+  "text": {
+    "status": "generated",
+    "div": "\u003Cdiv\u003E\u003Cp\u003E\u003Cb\u003EPatient\u003C/b\u003E\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EName\u003C/b\u003E: SMART, WILMA\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EDOB\u003C/b\u003E: Mar 13, 1950\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EAdministrative Gender\u003C/b\u003E: Female\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EMarital Status\u003C/b\u003E: Divorced\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EStatus\u003C/b\u003E: Active\u003C/p\u003E\u003C/div\u003E"
+  },
+  "extension": [{
+    "url": "http://fhir.org/guides/argonaut/StructureDefinition/argo-ethnicity",
+    "extension": [{
+      "url": "ombCategory",
+      "valueCoding": {
+        "system": "http://hl7.org/fhir/v3/Ethnicity",
+        "code": "2135-2",
+        "display": "Hispanic or Latino",
+        "userSelected": false
+      }
+    }, {
+      "url": "detailed",
+      "valueCoding": {
+        "system": "http://hl7.org/fhir/v3/Ethnicity",
+        "code": "2135-2",
+        "userSelected": false
+      }
+    }, {
+      "url": "text",
+      "valueString": "Hispanic or Latino"
+    }]
+  }],
+  "identifier": [{
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "MR",
+        "display": "Medical record number",
+        "userSelected": false
+      }],
+      "text": "Community Medical Record Number"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.787.0.0",
+    "value": "2453651",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "2453651"
+      }]
+    },
+    "period": {
+      "start": "2019-08-07T22:12:36.000Z"
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "MR",
+        "display": "Medical record number",
+        "userSelected": false
+      }],
+      "text": "MRN"
+    },
+    "system": "urn:oid:2.2.2.2.2.2",
+    "value": "10000891",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "10000891"
+      }]
+    },
+    "period": {
+      "start": "2018-09-19T15:58:40.000Z"
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "MR",
+        "display": "Medical record number",
+        "userSelected": false
+      }],
+      "text": "MRN"
+    },
+    "system": "urn:oid:1.1.1.1.1.1",
+    "value": "10002700",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "10002700"
+      }]
+    },
+    "period": {
+      "start": "2016-06-22T20:25:56.000Z"
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "text": "Military Id"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.42.10001.100001.12",
+    "value": "565848",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "565848"
+      }]
+    },
+    "period": {
+      "start": "2019-09-18T20:45:32.000Z"
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "U",
+        "display": "Unspecified identifier",
+        "userSelected": false
+      }],
+      "text": "Messaging"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.8",
+    "value": "00000001236790",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "00000001236790"
+      }]
+    },
+    "period": {
+      "start": "2017-09-26T05:00:00.000Z",
+      "end": "2019-01-02T05:00:00.000Z"
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "U",
+        "display": "Unspecified identifier",
+        "userSelected": false
+      }],
+      "text": "Messaging"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.8",
+    "value": "65DBEC0B8D154E3488FA5FFE9AC7713F",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "65DBEC0B8D154E3488FA5FFE9AC7713F"
+      }]
+    },
+    "period": {
+      "start": "2016-01-02T05:00:00.000Z"
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "1236790",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "1236790"
+      }]
+    },
+    "period": {
+      "start": "2017-09-26T05:00:00.000Z",
+      "end": "2019-01-02T05:00:00.000Z"
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "1236790",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "1236790"
+      }]
+    },
+    "period": {
+      "start": "2017-09-26T05:00:00.000Z",
+      "end": "2019-01-02T05:00:00.000Z"
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "123679",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "123679"
+      }]
+    },
+    "period": {
+      "start": "2017-09-26T05:00:00.000Z",
+      "end": "2019-01-02T05:00:00.000Z"
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "12367",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "12367"
+      }]
+    },
+    "period": {
+      "start": "2017-09-26T05:00:00.000Z",
+      "end": "2019-01-02T05:00:00.000Z"
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "1236",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "1236"
+      }]
+    },
+    "period": {
+      "start": "2017-09-26T05:00:00.000Z",
+      "end": "2019-01-02T05:00:00.000Z"
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "123",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "123"
+      }]
+    },
+    "period": {
+      "start": "2017-09-26T05:00:00.000Z",
+      "end": "2019-01-02T05:00:00.000Z"
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "A0000000123",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "A0000000123"
+      }]
+    },
+    "period": {
+      "start": "2017-09-26T05:00:00.000Z",
+      "end": "2019-01-02T05:00:00.000Z"
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "URN:CERNER:IDENTITY-FEDERATION:REALM:687F29DD-69DD-4DE5-ACB1-FD8A2241EF3A:PRINCIPAL:LQ4SG3D28BY",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "URN:CERNER:IDENTITY-FEDERATION:REALM:687F29DD-69DD-4DE5-ACB1-FD8A2241EF3A:PRINCIPAL:LQ4SG3D28BY"
+      }]
+    },
+    "period": {
+      "start": "2017-09-26T05:00:00.000Z",
+      "end": "2019-01-02T05:00:00.000Z"
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "URN:CERNER:IDENTITY-FEDERATION:REALM:687F29DD-69DD-4DE5-ACB1-FD8A2241EF3A:PRINCIPAL:LQ4SG3D28BR",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "URN:CERNER:IDENTITY-FEDERATION:REALM:687F29DD-69DD-4DE5-ACB1-FD8A2241EF3A:PRINCIPAL:LQ4SG3D28BR"
+      }]
+    },
+    "period": {
+      "start": "2016-11-01T10:00:00.000Z"
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "urn:cerner:identity-federation:realm:687f29dd-69dd-4de5-acb1-fd8a2241ef3a:principal:LQ4Sg3D28BR",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "urn:cerner:identity-federation:realm:687f29dd-69dd-4de5-acb1-fd8a2241ef3a:principal:LQ4Sg3D28BR"
+      }]
+    },
+    "period": {
+      "start": "2016-11-01T10:00:00.000Z"
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.8",
+    "value": "9494949494",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "9494949494"
+      }]
+    },
+    "period": {
+      "start": "2013-09-26T05:00:00.000Z"
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:DEA7C75B5602A16A00BF980B3DF70E29",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:DEA7C75B5602A16A00BF980B3DF70E29"
+      }]
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:20A8C75B4900A689D48A72837BF7618B",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:20A8C75B4900A689D48A72837BF7618B"
+      }]
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:E783C85B410291C9F63855A0609B051F",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:E783C85B410291C9F63855A0609B051F"
+      }]
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:4488C85B3102744477F87768F0C84049",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:4488C85B3102744477F87768F0C84049"
+      }]
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:6088C85B78004913B151BA7615AAF455",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:6088C85B78004913B151BA7615AAF455"
+      }]
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:8088C85BCC02239D3CB1F9FE4CC1DAFD",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:8088C85BCC02239D3CB1F9FE4CC1DAFD"
+      }]
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:8688C85B250233295206CBFB5AC866BC",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:8688C85B250233295206CBFB5AC866BC"
+      }]
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:A488C85B610272B838FFABC1F9D50E0C",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:A488C85B610272B838FFABC1F9D50E0C"
+      }]
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:AE88C85BC500DAB370AD741A37EAC3FE",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:AE88C85BC500DAB370AD741A37EAC3FE"
+      }]
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:E988C85BCC00DB004A47C64B1C5752A5",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:E988C85BCC00DB004A47C64B1C5752A5"
+      }]
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:0189C85BCE026E7FA8F139041EB38D22",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:0189C85BCE026E7FA8F139041EB38D22"
+      }]
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:1189C85B3E01C154A7D8EA3A189F0804",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:1189C85B3E01C154A7D8EA3A189F0804"
+      }]
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:6089C85B1D0351DDF1994A0676A2EDB2",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:6089C85B1D0351DDF1994A0676A2EDB2"
+      }]
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:AD8BC85BA503F355F89003D1A8C82A9E",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:AD8BC85BA503F355F89003D1A8C82A9E"
+      }]
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:5E8CC85B1A02B5BDB62B197B09A75199",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:5E8CC85B1A02B5BDB62B197B09A75199"
+      }]
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:678CC85BF40001995D63EBD66EEF5972",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:678CC85BF40001995D63EBD66EEF5972"
+      }]
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:XYZ12",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:XYZ12"
+      }]
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:XYZ12345678",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:XYZ12345678"
+      }]
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:XYZ1234567",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:XYZ1234567"
+      }]
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:73CBCD5B30003FA1F0B57750211881B2",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:73CBCD5B30003FA1F0B57750211881B2"
+      }]
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:XYZ123456",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:XYZ123456"
+      }]
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:52A2C75B03026F291330B7DD65327690",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:52A2C75B03026F291330B7DD65327690"
+      }]
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:02A4C75B9402DC01FBAAF95A2D72E059",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:02A4C75B9402DC01FBAAF95A2D72E059"
+      }]
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:123",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:123"
+      }]
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:5FA2C75B9001DA1DFE5ED3F3DAF6A517",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:5FA2C75B9001DA1DFE5ED3F3DAF6A517"
+      }]
+    }
+  }, {
+    "use": "usual",
+    "type": {
+      "coding": [{
+        "system": "http://hl7.org/fhir/v2/0203",
+        "code": "AN",
+        "display": "Account number",
+        "userSelected": false
+      }],
+      "text": "Federated Person Principal"
+    },
+    "system": "urn:oid:2.16.840.1.113883.3.13.6",
+    "value": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:79A2C75B43008D99899408BB8ACE7DEE",
+    "_value": {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+        "valueString": "URN:CERNER:IDENTITY-FEDERATION:REALM:2E882EFF-FA72-4882-ADC8-A685F7D2BFA6:PRINCIPAL:79A2C75B43008D99899408BB8ACE7DEE"
+      }]
+    }
+  }],
+  "active": true,
+  "name": [{
+    "use": "official",
+    "text": "SMART, WILMA",
+    "family": ["SMART"],
+    "given": ["WILMA"],
+    "period": {
+      "start": "2016-06-22T20:25:58.000Z"
+    }
+  }, {
+    "use": "maiden",
+    "text": "WILLIAMS,",
+    "family": ["WILLIAMS"],
+    "period": {
+      "start": "2017-03-09T19:37:17.000Z"
+    }
+  }, {
+    "use": "old",
+    "text": "SMART, WILMA",
+    "family": ["SMART"],
+    "given": ["WILMA"],
+    "period": {
+      "start": "2016-06-22T20:25:58.000Z",
+      "end": "2019-05-21T19:06:08.000Z"
+    }
+  }],
+  "telecom": [{
+    "system": "phone",
+    "value": "8165477777",
+    "use": "work",
+    "period": {
+      "start": "2017-06-27T17:28:04.000Z"
+    }
+  }, {
+    "system": "phone",
+    "value": "8169519999",
+    "use": "home",
+    "period": {
+      "start": "2017-02-07T18:56:52.000Z"
+    }
+  }, {
+    "system": "phone",
+    "value": "5032458888",
+    "use": "mobile",
+    "period": {
+      "start": "2017-06-27T17:31:07.000Z"
+    }
+  }, {
+    "system": "email",
+    "value": "wilma_smart@google.com",
+    "use": "home",
+    "period": {
+      "start": "2017-12-01T16:52:18.000Z"
+    }
+  }],
+  "gender": "female",
+  "birthDate": "1950-03-13",
+  "address": [{
+    "use": "home",
+    "text": "1200 Grand Road\n_\nKansas City, MO 16145\nUSA",
+    "line": ["1200 Grand Road", "_"],
+    "city": "Kansas City",
+    "district": "Jackson",
+    "state": "MO",
+    "postalCode": "16145",
+    "country": "USA",
+    "period": {
+      "start": "2017-02-07T18:56:52.000Z"
+    }
+  }],
+  "maritalStatus": {
+    "coding": [{
+      "system": "http://hl7.org/fhir/v3/MaritalStatus",
+      "code": "D",
+      "display": "Divorced",
+      "userSelected": false
+    }],
+    "text": "Divorced"
+  },
+  "contact": [{
+    "relationship": [{
+      "text": "Authorized Representative"
+    }],
+    "name": {
+      "use": "official",
+      "text": "TEST, LISA",
+      "family": ["TEST"],
+      "given": ["LISA"],
+      "period": {
+        "start": "2008-08-21T16:11:46.000Z"
+      }
+    },
+    "telecom": [{
+      "system": "phone",
+      "value": "1234567888",
+      "use": "home",
+      "period": {
+        "start": "2012-01-06T21:06:50.000Z"
+      }
+    }],
+    "address": {
+      "use": "home",
+      "text": "123 Test Ln\nSchenectady, NY 12345\nUSA",
+      "line": ["123 Test Ln"],
+      "city": "Schenectady",
+      "district": "Schenectady",
+      "state": "NY",
+      "postalCode": "12345",
+      "country": "USA",
+      "period": {
+        "start": "2012-01-06T21:06:50.000Z"
+      }
+    },
+    "gender": "female",
+    "period": {
+      "start": "2019-04-11T20:54:02.000Z",
+      "end": "2019-05-16T16:16:12.000Z"
+    }
+  }, {
+    "relationship": [{
+      "text": "Authorized Representative"
+    }],
+    "name": {
+      "use": "official",
+      "text": "Smart, Nancy",
+      "family": ["Smart"],
+      "given": ["Nancy"],
+      "period": {
+        "start": "2018-12-03T16:37:19.000Z"
+      }
+    },
+    "period": {
+      "start": "2018-12-03T16:37:16.000Z",
+      "end": "2018-12-04T09:17:39.000Z"
+    }
+  }, {
+    "relationship": [{
+      "text": "Authorized Representative"
+    }],
+    "name": {
+      "use": "official",
+      "text": "SMART Jr, FRED RICK",
+      "family": ["SMART"],
+      "given": ["FRED", "RICK"],
+      "prefix": ["Mr"],
+      "suffix": ["Jr"],
+      "period": {
+        "start": "2016-08-31T18:24:54.000Z"
+      }
+    },
+    "telecom": [{
+      "system": "phone",
+      "value": "8168889999",
+      "use": "home",
+      "period": {
+        "start": "2017-11-16T17:18:18.000Z"
+      }
+    }, {
+      "system": "email",
+      "value": "kathy.pickering@cerner.com",
+      "use": "home",
+      "period": {
+        "start": "2018-09-13T16:54:27.000Z"
+      }
+    }],
+    "address": {
+      "use": "home",
+      "text": "1000 Rockhill Rd\nApartment 2\nKansas City, MO 64114\nUSA",
+      "line": ["1000 Rockhill Rd", "Apartment 2"],
+      "city": "Kansas City",
+      "district": "Jackson",
+      "state": "MO",
+      "postalCode": "64114",
+      "country": "USA",
+      "period": {
+        "start": "2017-11-16T17:18:18.000Z"
+      }
+    },
+    "gender": "male",
+    "period": {
+      "start": "2017-12-28T15:41:08.000Z",
+      "end": "2018-01-04T04:57:53.000Z"
+    }
+  }, {
+    "relationship": [{
+      "text": "Power of Attorney"
+    }],
+    "name": {
+      "use": "official",
+      "text": "CROWN, ADAM",
+      "family": ["CROWN"],
+      "given": ["ADAM"],
+      "period": {
+        "start": "2017-10-05T17:21:05.000Z"
+      }
+    },
+    "telecom": [{
+      "system": "phone",
+      "value": "8162012074",
+      "use": "home",
+      "period": {
+        "start": "2017-10-05T17:21:04.000Z"
+      }
+    }, {
+      "system": "email",
+      "value": "adam.crown@cerner.com",
+      "use": "home",
+      "period": {
+        "start": "2017-10-05T17:23:17.000Z"
+      }
+    }],
+    "address": {
+      "use": "home",
+      "text": "2800 Rockcreek Parkway\nRandolph, MO 64117\nUSA",
+      "line": ["2800 Rockcreek Parkway"],
+      "city": "Randolph",
+      "district": "Clay",
+      "state": "MO",
+      "postalCode": "64117",
+      "country": "USA",
+      "period": {
+        "start": "2017-10-05T17:21:04.000Z"
+      }
+    },
+    "gender": "male",
+    "period": {
+      "start": "2019-04-26T19:08:56.000Z",
+      "end": "2019-05-16T16:16:12.000Z"
+    }
+  }, {
+    "relationship": [{
+      "text": "Power of Attorney"
+    }],
+    "name": {
+      "use": "official",
+      "text": "SMART Jr, FRED RICK",
+      "family": ["SMART"],
+      "given": ["FRED", "RICK"],
+      "prefix": ["Mr"],
+      "suffix": ["Jr"],
+      "period": {
+        "start": "2016-08-31T18:24:54.000Z"
+      }
+    },
+    "telecom": [{
+      "system": "phone",
+      "value": "8168889999",
+      "use": "home",
+      "period": {
+        "start": "2017-11-16T17:18:18.000Z"
+      }
+    }, {
+      "system": "email",
+      "value": "kathy.pickering@cerner.com",
+      "use": "home",
+      "period": {
+        "start": "2018-09-13T16:54:27.000Z"
+      }
+    }],
+    "address": {
+      "use": "home",
+      "text": "1000 Rockhill Rd\nApartment 2\nKansas City, MO 64114\nUSA",
+      "line": ["1000 Rockhill Rd", "Apartment 2"],
+      "city": "Kansas City",
+      "district": "Jackson",
+      "state": "MO",
+      "postalCode": "64114",
+      "country": "USA",
+      "period": {
+        "start": "2017-11-16T17:18:18.000Z"
+      }
+    },
+    "gender": "male",
+    "period": {
+      "start": "2019-04-26T19:37:12.000Z",
+      "end": "2019-05-16T16:16:12.000Z"
+    }
+  }],
+  "communication": [{
+    "language": {
+      "coding": [{
+        "system": "urn:ietf:bcp:47",
+        "code": "en",
+        "display": "English",
+        "userSelected": false
+      }],
+      "text": "English"
+    },
+    "preferred": true
+  }]
+}

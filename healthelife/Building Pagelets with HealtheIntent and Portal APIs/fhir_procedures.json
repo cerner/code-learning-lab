@@ -1,0 +1,175 @@
+{
+	"resourceType": "Bundle",
+	"id": "15e60d76-66dd-4e51-8b46-0d5f8c62ae40",
+	"type": "searchset",
+	"total": 2,
+	"link": [{
+		"relation": "self",
+		"url": "https://fhir-open.sandboxcerner.com/dstu2/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/Immunization?patient=4342008"
+	}],
+	"entry": [{
+		"fullUrl": "https://fhir-open.sandboxcerner.com/dstu2/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/Immunization/M10015297",
+		"resource": {
+			"resourceType": "Immunization",
+			"id": "M10015297",
+			"meta": {
+				"versionId": "1",
+				"lastUpdated": "2019-02-20T16:49:28-06:00"
+			},
+			"text": {
+				"status": "generated",
+				"div": "\u003Cdiv\u003E\u003Cp\u003E\u003Cb\u003EImmunization\u003C/b\u003E\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EStatus\u003C/b\u003E: Completed\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EVaccine\u003C/b\u003E: influenza virus vaccine, inactivated\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EDate\u003C/b\u003E: Feb 20, 2019 10:49 P.M. UTC\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EPatient Name\u003C/b\u003E: SMART, WILMA\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EGiven\u003C/b\u003E: Yes\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EAdministered by\u003C/b\u003E: Hussley, Celeste\u003C/p\u003E\u003Cp\u003E\u003Cb\u003ESite\u003C/b\u003E: Left Upper Arm\u003C/p\u003E\u003Cp\u003E\u003Cb\u003ERoute\u003C/b\u003E: IM\u003C/p\u003E\u003C/div\u003E"
+			},
+			"status": "completed",
+			"date": "2019-02-20T16:49:00-06:00",
+			"vaccineCode": {
+				"coding": [{
+					"system": "http://hl7.org/fhir/sid/cvx",
+					"code": "88",
+					"display": "influenza, unspecified formulation",
+					"userSelected": false
+				}],
+				"text": "influenza virus vaccine, inactivated"
+			},
+			"patient": {
+				"reference": "Patient/4342008",
+				"display": "SMART, WILMA"
+			},
+			"wasNotGiven": false,
+			"reported": false,
+			"performer": {
+				"reference": "Practitioner/845984",
+				"display": "Hussley, Celeste"
+			},
+			"requester": {
+				"reference": "Practitioner/605926",
+				"display": "Carter, Kristen Cerner"
+			},
+			"encounter": {
+				"reference": "Encounter/4455906"
+			},
+			"manufacturer": {
+				"display": "Arcola Laboratories"
+			},
+			"location": {
+				"reference": "Location/4063632",
+				"display": "Outpatient Ctr"
+			},
+			"lotNumber": "12345",
+			"expirationDate": "2020-02-21",
+			"site": {
+				"coding": [{
+					"system": "http://snomed.info/sct",
+					"code": "368208006",
+					"display": "left upper arm structure (body structure)",
+					"userSelected": false
+				}],
+				"text": "Left Upper Arm"
+			},
+			"route": {
+				"coding": [{
+					"system": "http://snomed.info/sct",
+					"code": "78421000",
+					"display": "Intramuscular route (qualifier value)",
+					"userSelected": false
+				}, {
+					"system": "http://ncimeta.nci.nih.gov",
+					"code": "C28161",
+					"display": "INTRAMUSCULAR",
+					"userSelected": false
+				}],
+				"text": "IM"
+			},
+			"doseQuantity": {
+				"value": 0.5,
+				"unit": "mL",
+				"system": "http://unitsofmeasure.org",
+				"code": "mL"
+			}
+		}
+	}, {
+		"fullUrl": "https://fhir-open.sandboxcerner.com/dstu2/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/Immunization/M6993311",
+		"resource": {
+			"resourceType": "Immunization",
+			"id": "M6993311",
+			"meta": {
+				"versionId": "6",
+				"lastUpdated": "2019-06-24T14:31:44-05:00"
+			},
+			"text": {
+				"status": "generated",
+				"div": "\u003Cdiv\u003E\u003Cp\u003E\u003Cb\u003EImmunization\u003C/b\u003E\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EStatus\u003C/b\u003E: Entered in Error\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EVaccine\u003C/b\u003E: influenza virus vaccine, inactivated\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EDate\u003C/b\u003E: Feb  7, 2017  2:49 P.M. UTC\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EPatient Name\u003C/b\u003E: SMART, WILMA\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EGiven\u003C/b\u003E: Yes\u003C/p\u003E\u003Cp\u003E\u003Cb\u003EAdministered by\u003C/b\u003E: Pickering, Kathy\u003C/p\u003E\u003Cp\u003E\u003Cb\u003ESite\u003C/b\u003E: Left Arm\u003C/p\u003E\u003Cp\u003E\u003Cb\u003ERoute\u003C/b\u003E: IM\u003C/p\u003E\u003C/div\u003E"
+			},
+			"status": "entered-in-error",
+			"date": "2017-02-07T08:49:00-06:00",
+			"vaccineCode": {
+				"coding": [{
+					"system": "http://hl7.org/fhir/sid/cvx",
+					"code": "88",
+					"display": "influenza, unspecified formulation",
+					"userSelected": false
+				}],
+				"text": "influenza virus vaccine, inactivated"
+			},
+			"patient": {
+				"reference": "Patient/4342008",
+				"display": "SMART, WILMA"
+			},
+			"wasNotGiven": false,
+			"reported": false,
+			"performer": {
+				"reference": "Practitioner/4474007",
+				"display": "Pickering, Kathy"
+			},
+			"encounter": {
+				"reference": "Encounter/4027909"
+			},
+			"manufacturer": {
+				"display": "Merck \u0026 Company Inc"
+			},
+			"location": {
+				"reference": "Location/4048296",
+				"display": "FPC"
+			},
+			"lotNumber": "UI89748",
+			"expirationDate": "2017-06-01",
+			"site": {
+				"coding": [{
+					"system": "http://snomed.info/sct",
+					"code": "368208006",
+					"display": "left upper arm structure (body structure)",
+					"userSelected": false
+				}],
+				"text": "Left Arm"
+			},
+			"route": {
+				"coding": [{
+					"system": "http://snomed.info/sct",
+					"code": "78421000",
+					"display": "Intramuscular route (qualifier value)",
+					"userSelected": false
+				}, {
+					"system": "http://ncimeta.nci.nih.gov",
+					"code": "C28161",
+					"display": "INTRAMUSCULAR",
+					"userSelected": false
+				}],
+				"text": "IM"
+			},
+			"doseQuantity": {
+				"value": 1.0,
+				"unit": "mL",
+				"system": "http://unitsofmeasure.org",
+				"code": "mL"
+			},
+			"note": [{
+				"authorReference": {
+					"reference": "Practitioner/4474007",
+					"display": "Pickering, Kathy"
+				},
+				"time": "2019-06-24T14:31:43-05:00",
+				"text": "[6/24/2019 Uncharted] testing patient access"
+			}]
+		}
+	}]
+}
