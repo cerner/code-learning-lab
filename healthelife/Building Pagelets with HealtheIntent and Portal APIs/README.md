@@ -86,8 +86,8 @@ Just like how you ran the demo, just run the commands from your skeleton folder:
 [ThePagelet]: https://localpagelet.test:8000/
 [HealtheLife]: http://chc2019-pageletclass.patientportal.us.healtheintent.com/
 [HostFileInstructions]: https://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/
-[requirements.txt]: https://raw.githubusercontent.com/cerner/code-learning-lab/master/healthelife/building_pagelets_2019/requirements.txt
-[run.bat]: https://raw.githubusercontent.com/cerner/code-learning-lab/master/healthelife/building_pagelets_2019/run.bat
+[requirements.txt]: https://raw.githubusercontent.com/cerner/code-learning-lab/main/healthelife/Building%20Pagelets%20with%20HealtheIntent%20and%20Portal%20APIs/demo/requirements.txt
+[run.bat]: https://raw.githubusercontent.com/cerner/code-learning-lab/main/healthelife/Building%20Pagelets%20with%20HealtheIntent%20and%20Portal%20APIs/demo/run.bat
 [Example Screenshot]: procedures_screenshot.png 
 [Demo]: downloads/demo.zip
 [Skeleton]: downloads/skeleton.zip
