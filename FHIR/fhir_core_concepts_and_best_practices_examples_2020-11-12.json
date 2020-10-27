@@ -1,0 +1,485 @@
+{
+	"info": {
+		"_postman_id": "e8e17e3c-d0ac-4c24-b1fa-5465ee12b055",
+		"name": "FHIR Core Concepts and Best Practices Examples",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "01 Identify the maturity level of the following resources for R4:",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.hl7.org/fhir/r4/resourcelist.html",
+					"protocol": "https",
+					"host": [
+						"www",
+						"hl7",
+						"org"
+					],
+					"path": [
+						"fhir",
+						"r4",
+						"resourcelist.html"
+					]
+				},
+				"description": "* Patient: N\n* Condition: 3\n* Observation: N\n* Coverage: 2"
+			},
+			"response": []
+		},
+		{
+			"name": "02 What are the terminology bindings for the identifier.type field on Cerner’s Millennium R4 Practitioner API?",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://fhir.cerner.com/millennium/r4/individuals/practitioner/#terminology-bindings",
+					"protocol": "http",
+					"host": [
+						"fhir",
+						"cerner",
+						"com"
+					],
+					"path": [
+						"millennium",
+						"r4",
+						"individuals",
+						"practitioner",
+						""
+					],
+					"hash": "terminology-bindings"
+				},
+				"description": "* Identifier Type Codes: http://hl7.org/fhir/identifier-type\n* v2 Identifier Type: http://terminology.hl7.org/CodeSystem/v2-0203"
+			},
+			"response": []
+		},
+		{
+			"name": "03 What data format does Cerner’s Millennium R4 sandbox server utilize? What is the MIME-type for that data format?",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://fhir.cerner.com/millennium/r4/#media-types",
+					"protocol": "http",
+					"host": [
+						"fhir",
+						"cerner",
+						"com"
+					],
+					"path": [
+						"millennium",
+						"r4",
+						""
+					],
+					"hash": "media-types"
+				},
+				"description": "* JSON\n* application/fhir+json"
+			},
+			"response": []
+		},
+		{
+			"name": "04 In Cerner’s Millennium R4 server, what is the middle name of Patient Fred Smart? (id: 12743119)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/fhir+json"
+					}
+				],
+				"url": {
+					"raw": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Patient/12743119",
+					"protocol": "https",
+					"host": [
+						"fhir-open",
+						"cerner",
+						"com"
+					],
+					"path": [
+						"r4",
+						"ec2458f2-1e24-41c8-b71b-0e701af7583d",
+						"Patient",
+						"12743119"
+					]
+				},
+				"description": "Rick"
+			},
+			"response": []
+		},
+		{
+			"name": "05 In Cerner’s Millennium R4 server, how many current Conditions does Nancy Smart (id: 12724066) have?",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/fhir+json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Condition?patient=12724066&clinical-status=active,recurrence,relapse",
+					"protocol": "https",
+					"host": [
+						"fhir-open",
+						"cerner",
+						"com"
+					],
+					"path": [
+						"r4",
+						"ec2458f2-1e24-41c8-b71b-0e701af7583d",
+						"Condition"
+					],
+					"query": [
+						{
+							"key": "patient",
+							"value": "12724066"
+						},
+						{
+							"key": "clinical-status",
+							"value": "active,recurrence,relapse"
+						}
+					]
+				},
+				"description": "26"
+			},
+			"response": []
+		},
+		{
+			"name": "06 In Cerner’s Millennium R4 server, how many Appointments does Practitioner Christina Applegate (id: 593923) have in May through July 2020?",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/fhir+json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Appointment?practitioner=593923&date=ge2020-05-01T00:00:00.000Z&date=lt2020-08-01T00:00:00.000Z",
+					"protocol": "https",
+					"host": [
+						"fhir-open",
+						"cerner",
+						"com"
+					],
+					"path": [
+						"r4",
+						"ec2458f2-1e24-41c8-b71b-0e701af7583d",
+						"Appointment"
+					],
+					"query": [
+						{
+							"key": "practitioner",
+							"value": "593923"
+						},
+						{
+							"key": "date",
+							"value": "ge2020-05-01T00:00:00.000Z"
+						},
+						{
+							"key": "date",
+							"value": "lt2020-08-01T00:00:00.000Z"
+						}
+					]
+				},
+				"description": "15 (make sure to page through all results)"
+			},
+			"response": []
+		},
+		{
+			"name": "07 In Cerner’s Millennium R4 server, what is the name of the patient with military ID 10050007026?",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/fhir+json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Patient?identifier=urn:oid:2.16.840.1.113883.3.42.10001.100001.12|10050007026",
+					"protocol": "https",
+					"host": [
+						"fhir-open",
+						"cerner",
+						"com"
+					],
+					"path": [
+						"r4",
+						"ec2458f2-1e24-41c8-b71b-0e701af7583d",
+						"Patient"
+					],
+					"query": [
+						{
+							"key": "identifier",
+							"value": "urn:oid:2.16.840.1.113883.3.42.10001.100001.12|10050007026"
+						}
+					]
+				},
+				"description": "Hailey Smart"
+			},
+			"response": []
+		},
+		{
+			"name": "08 Which extensions are supported by Cerner’s Millennium R4 Patient resource?",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://fhir.cerner.com/millennium/r4/individuals/patient/#extensions",
+					"protocol": "http",
+					"host": [
+						"fhir",
+						"cerner",
+						"com"
+					],
+					"path": [
+						"millennium",
+						"r4",
+						"individuals",
+						"patient",
+						""
+					],
+					"hash": "extensions"
+				},
+				"description": "* Patient Birth Time\n* US Core Race\n* US Core Ethnicity\n* US Core Birth Sex"
+			},
+			"response": []
+		},
+		{
+			"name": "09 According to its CapabilityStatement, does this FHIR server support OAuth? https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/fhir+json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/metadata",
+					"protocol": "https",
+					"host": [
+						"fhir-open",
+						"cerner",
+						"com"
+					],
+					"path": [
+						"r4",
+						"ec2458f2-1e24-41c8-b71b-0e701af7583d",
+						"metadata"
+					]
+				},
+				"description": "No (change fhir-open to fhir-ehr-code for a server that does support OAuth)"
+			},
+			"response": []
+		},
+		{
+			"name": "10 In Cerner’s Millennium R4 server, does Patient Nancy Smart (id: 12724066) have a normal blood pressure?",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/fhir+json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation?patient=12724066&code=http://snomed.info/sct|75367002",
+					"protocol": "https",
+					"host": [
+						"fhir-open",
+						"cerner",
+						"com"
+					],
+					"path": [
+						"r4",
+						"ec2458f2-1e24-41c8-b71b-0e701af7583d",
+						"Observation"
+					],
+					"query": [
+						{
+							"key": "patient",
+							"value": "12724066"
+						},
+						{
+							"key": "code",
+							"value": "http://snomed.info/sct|75367002"
+						}
+					]
+				},
+				"description": "Yes"
+			},
+			"response": []
+		},
+		{
+			"name": "11 In Cerner’s Millennium R4 server, is Patient Hailey Smart (id: 12724068) currently taking insulin?",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/fhir+json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest?patient=12724068",
+					"protocol": "https",
+					"host": [
+						"fhir-open",
+						"cerner",
+						"com"
+					],
+					"path": [
+						"r4",
+						"ec2458f2-1e24-41c8-b71b-0e701af7583d",
+						"MedicationRequest"
+					],
+					"query": [
+						{
+							"key": "patient",
+							"value": "12724068"
+						}
+					]
+				},
+				"description": "Yes"
+			},
+			"response": []
+		},
+		{
+			"name": "12 In Cerner’s Millennium R4 server, which patient has an allergy to shellfish: Hailey Smart (id: 12724068) or Fredrick Smart (id: 12724070)?",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/fhir+json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/AllergyIntolerance?patient=12724068",
+					"protocol": "https",
+					"host": [
+						"fhir-open",
+						"cerner",
+						"com"
+					],
+					"path": [
+						"r4",
+						"ec2458f2-1e24-41c8-b71b-0e701af7583d",
+						"AllergyIntolerance"
+					],
+					"query": [
+						{
+							"key": "patient",
+							"value": "12724068"
+						}
+					]
+				},
+				"description": "Fredrick Smart"
+			},
+			"response": []
+		},
+		{
+			"name": "13 In Cerner’s Millennium R4 server, has patient Timmy Smart (id: 12724069) had any Procedures?",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/fhir+json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure?patient=12724069",
+					"protocol": "https",
+					"host": [
+						"fhir-open",
+						"cerner",
+						"com"
+					],
+					"path": [
+						"r4",
+						"ec2458f2-1e24-41c8-b71b-0e701af7583d",
+						"Procedure"
+					],
+					"query": [
+						{
+							"key": "patient",
+							"value": "12724069"
+						}
+					]
+				},
+				"description": "No"
+			},
+			"response": []
+		},
+		{
+			"name": "14 In Cerner’s Millennium R4 server, what happens when querying for Appointments of patient Sandy Smart (id: 12742399)? Can you guess why?",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/fhir+json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Appointment?patient=12742399",
+					"protocol": "https",
+					"host": [
+						"fhir-open",
+						"cerner",
+						"com"
+					],
+					"path": [
+						"r4",
+						"ec2458f2-1e24-41c8-b71b-0e701af7583d",
+						"Appointment"
+					],
+					"query": [
+						{
+							"key": "patient",
+							"value": "12742399"
+						}
+					]
+				},
+				"description": "* An OperationOutcome is returned indicating that the date parameter must be set\n* In a production environment, scheduling data is very heavyweight, so Cerner enforces extra rules to limit input space"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "ca1d45a3-fcc3-44a0-b4c2-ffbe0aa2f811",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "8e7eb740-4dfc-4fb3-b2c6-bb36c443e841",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
