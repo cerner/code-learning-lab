@@ -12,11 +12,11 @@ This lab demonstates the OAuth 2 protocol messages used by SMART(R)
 to request access on behalf of a user and obtain an authorization
 (access) token.
 
-## Step 1:  Load the demo
+## Step 1: Load the demo
 
-https://authz-demo.sandboxcerner.com/client/demo
+https://authz-demo.cerner.com/client/demo
 
-## Step 2:  Open the web console
+## Step 2: Open the web console
 
 The web console will output useful information about the specific steps 
 being performed to orchestrate the authorization process.  Perform the 
@@ -26,48 +26,48 @@ following steps to open it in your browser:
 - Firefox:       Tools->Web Developer->Web Console
 - Edge / IE:     F12 key->Console
 
-## Step 3:  Populate authorization request parameters
+## Step 3: Populate authorization request parameters
 
 In the box labeled "2", fill out the following parameters.  These
 parameters are used to construct the authorization request to the
 authorization server.
 
-- Auth Server URI:  https://authorization.sandboxcerner.com/tenants/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/protocols/oauth2/profiles/smart-v1/personas/provider/authorize
+- Auth Server URI:  https://authorization.cerner.com/tenants/ec2458f2-1e24-41c8-b71b-0e701af7583d/protocols/oauth2/profiles/smart-v1/personas/provider/authorize
   - This is the "authorization" endpoint where the authorization 
     request will be submitted to.
   - It is the entry point that will guide the user through steps 
     to confirm their identity, and conditionally, provide consent.
 
-- Client ID:        c4093c13-1ed1-47ef-95a6-a225d3e47023
+- Client ID:        21b96029-c9fd-4d0e-8c99-4814ac954486
   - This is the unique identifier that this application uses 
     to identify itself with the above authorization server.
 
 - Scope(s):         user/Patient.read
   - This is the access being requested by the demo application.
   
-- Aud:              https://fhir-ehr.sandboxcerner.com/dstu2/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca
+- Aud:              https://fhir-ehr.cerner.com/dstu2/ec2458f2-1e24-41c8-b71b-0e701af7583d
   - This is the base URL hosting the services that will be accessed.
   - The authorization server verifies this is a URL known to it, as 
     to prevent you from accidentally sending tokens to a malicious party.
 	
 _Note_:  An additional parameter "state" is automatically generated for you by the demo application.  Your client application should generate and store its own state value associated to a given device to prevent malicious parties from orchestrating a "session fixation"-style attack.
 
-## Step 4:  Submit the request
+## Step 4: Submit the request
 
 - Click "Get Authorization Code"
 - A second window will open to orchestrate authentication / authorization.
 - Enter the lab credentials, click log-in.
 - This tab should close, and the previous tab should foreground.
 
-## Step 5:  Verify token request parameters
+## Step 5: Verify token request parameters
 
 In the box labeled "3", make sure the following parameters
 have been pre-populated:
 
-- Token URI:    https://authorization.sandboxcerner.com/tenants/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/protocols/oauth2/profiles/smart-v1/token
+- Token URI:    https://authorization.cerner.com/tenants/ec2458f2-1e24-41c8-b71b-0e701af7583d/protocols/oauth2/profiles/smart-v1/token
   - This is the URL where the token request will be submitted.
 
-- Client ID:    c4093c13-1ed1-47ef-95a6-a225d3e47023
+- Client ID:    21b96029-c9fd-4d0e-8c99-4814ac954486
   - This is the unique identifier that this application uses 
     to identify itself with the above authorization server.
 
@@ -75,14 +75,14 @@ have been pre-populated:
   - This the authorization code sent by the authorization
     server at the completion of step 4.
 
-## Step 6:  Submit token request
+## Step 6: Submit token request
 
 - Click "Get Access Token"
   - If an error occurs, the authorization code may have expired.
   - In this event, perform step 3, 4, immediately followed by this 
     step.
 
-## Step 7:  Examining the output
+## Step 7: Examining the output
 
 - The text area in the box labeled "3" contains the token response
   from the server.
@@ -100,23 +100,23 @@ have been pre-populated:
 This lab demonstrates the usage of an access token to access
 a protected service.
 
-## Step 1:  Submit an Authorization Request
+## Step 1: Submit an Authorization Request
 
 - Repeat steps 1-4 of Lab 1.
 
-## Step 2:  Submit a token request
+## Step 2: Submit a token request
 
 - Click "Get Access Token".
 
-## Step 3:  Request a patient record
+## Step 3: Request a patient record
 
 - In the demo application, locate the field named "Resource Server"
   section 4 "Access protected resource"
   - Enter the value:
-    https://fhir-ehr.sandboxcerner.com/dstu2/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/Patient/1316024
+    https://fhir-ehr-code.cerner.com/dstu2/ec2458f2-1e24-41c8-b71b-0e701af7583d/Patient/12507980
 - Click "Access Protected Resource"
 
-## Step 4:  Tamper with the access token
+## Step 4: Tamper with the access token
 
 - In the text field labeled "Access Token", modify the value of the JSON
   value of "access_token".
@@ -125,53 +125,52 @@ a protected service.
 
 # Lab 3: Scopes
 
-## Step 1:  Submit an authorization request
+## Step 1: Submit an authorization request
 
 - Repeat steps 1-4 of Lab 1.
 
-## Step 2:  Submit a token request
+## Step 2: Submit a token request
 
 - Click "Get Access Token"
 
-## Step 3:  Access a protected resource without appropriate scopes
+## Step 3: Access a protected resource without appropriate scopes
 
 - In the demo application, locate the field named "Resource Server" in section 4 "Access protected resource"
   - Enter the value:
-    https://fhir-ehr.sandboxcerner.com/dstu2/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/Practitioner/1272007
-- Submit the Request	
+    https://fhir-ehr-code.cerner.com/dstu2/ec2458f2-1e24-41c8-b71b-0e701af7583d/Practitioner/593923
+- Submit the Request
   - Note the "403" error response code (the scopes requested did not include the Practitioner resource.)
 
-## Step 4:  Access a protected resource with appropriate scopes
+## Step 4: Access a protected resource with appropriate scopes
 - Repeat the authorization request with the additional scope of "user/Practitioner.read"
-- Repeat the token request.  
+- Repeat the token request.
   - Confirm that "user/Practitioner.read" is returned in the list of scopes.
-- Repeat the resource request.  
+- Repeat the resource request.
   - Confirm a resource is successfully returned.
-  
-## Step 5:  Request fictitious/unauthorized scopes
+
+## Step 5: Request fictitious/unauthorized scopes
 
 - Repeat the authorization request with the additional scopes of "user/Fictitious.read system/Patient.read"
-- Repeat the token request.  
+- Repeat the token request.
   - Confirm that neither of these scopes are returned in the list of scopes.
-  
-	
+
 # Lab 4: Discovering Authorization Endpoints via Conformance
 
 This lab demonstrates how OAuth 2 endpoints are discovered via
 a FHIR(R) Conformance document.
 
-## Step 1:  Clear previous URI values
+## Step 1: Clear previous URI values
 
 - In section "2" of the demo application, delete the value of "Auth Server URI" and "Aud".
 - In the section "3" of the demo application, delete the value of "Token URI".
 
-## Step 2:  Discover endpoints via the conformance document
+## Step 2: Discover endpoints via the conformance document
 
 - In section "1" of the demo application, enter the following value for "FHIR Base URL"
-  - https://fhir-ehr.sandboxcerner.com/dstu2/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca
+  - https://fhir-ehr-code.cerner.com/dstu2/ec2458f2-1e24-41c8-b71b-0e701af7583d
 - Click "Discover Authorization URLs"
 
-## Step 3:  Confirm discovery succeeded
+## Step 3: Confirm discovery succeeded
 
 - Verify content for the conformance document was returned.
 - Verify that "Auth Server URI" in section "2" of the demo application now matches the value from Lab 1.
@@ -180,9 +179,9 @@ a FHIR(R) Conformance document.
 
 # Lab 5: Launch
 
-_Note_:  This lab requires a launch code generated by the presenter for the patient "Timmy SMART". 
+_Note_: This lab requires a launch code generated by the presenter for the patient "Timmy SMART".
 
-## Step 1:  Receive and parse a launch request
+## Step 1: Receive and parse a launch request
 
 - The instructor will generate a launch code, append it to the launch URL of the demo application, then generate a bit.ly link.
   - Transcribe the bit.ly URL into your browser.
@@ -192,35 +191,35 @@ _Note_:  This lab requires a launch code generated by the presenter for the pati
 
 _Instructor Note_: The callback URL for the demo app is as follows:
 
-- https://authz-demo.sandboxcerner.com/client/demo?iss=https%3A%2F%2Ffhir-ehr.sandboxcerner.com%2Fdstu2%2F0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca&launch=
+- https://authz-demo.cerner.com/client/demo?iss=https%3A%2F%2Ffhir-ehr-code.cerner.com%2Fdstu2%2Fec2458f2-1e24-41c8-b71b-0e701af7583d&launch=
 
-## Step 2:  Perform discovery
+## Step 2: Perform discovery
 
 - In section "1" of the demo application, click "Discover Authorization URLs".
 
-## Step 3:  Submit an authorization request
+## Step 3: Submit an authorization request
 
 - In section "2" of the demo application, enter the scopes "patient/Patient.read launch"
 - Click "Get Authorization Code".
 - If prompted, enter credentials.
 
-## Step 4:  Submit a token request
+## Step 4: Submit a token request
 
 - Click "Get Access Token"
 - Note the additional fields returned in the token response, including the identifier for the patient record (Patient/1316024)
 
-## Step 5:  Request a patient record
+## Step 5: Request a patient record
 
 - In the demo application, locate the field named "Resource Server" section 4 "Access protected resource".
   - Enter the value:
-    https://fhir-ehr.sandboxcerner.com/dstu2/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/Patient/4342012
+    https://fhir-ehr-code.cerner.com/dstu2/ec2458f2-1e24-41c8-b71b-0e701af7583d/Patient/12724069
 - Click "Access Protected Resource"
 
-## Step 6:  Request a different patient record
+## Step 6: Request a different patient record
 
 - In the demo application, locate the field named "Resource Server" section 4 "Access protected resource".
   - Enter the value:
-    https://fhir-ehr.sandboxcerner.com/dstu2/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/Patient/4342008
+    https://fhir-ehr-code.cerner.com/dstu2/ec2458f2-1e24-41c8-b71b-0e701af7583d/Patient/12724071
 - Click "Access Protected Resource"
 - Note Access is Denied (Status = 403).
 - Switch the scopes to "user/Patient.read launch", then click "Get Authorization Code".
@@ -233,32 +232,32 @@ _Instructor Note_: The callback URL for the demo app is as follows:
 This lab will demonstrate how OpenID Connect identity tokens can be obtained
 as part of the authorization exchange.
 
-## Step 1:  Prepare an authorization request with the openid scope
+## Step 1: Prepare an authorization request with the openid scope
 
-- Visit the following URL: https://authz-demo.sandboxcerner.com/client/demo?iss=https%3A%2F%2Ffhir-ehr.sandboxcerner.com%2Fdstu2%2F0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca
+- Visit the following URL: https://authz-demo.cerner.com/client/demo?iss=https%3A%2F%2Ffhir-ehr-code.cerner.com%2Fdstu2%2Fec2458f2-1e24-41c8-b71b-0e701af7583d
 - In section "1" of the demo application, click "Discover Authorization URLs".
 - In section "2" of the demo application, enter the scopes "user/Patient.read openid"
 
-## Step 2:  Submit the authorization request
+## Step 2: Submit the authorization request
 
 - Click "Get Authorization Code".
 - If prompted, enter credentials.
 
-## Step 3:  Submit a token request
+## Step 3: Submit a token request
 
 - Click "Get Access Token"
 - Note the presence of "id_token" in the token response.
 
-## Step 4:  Introspect the id_token
+## Step 4: Introspect the id_token
 
 - Open the website http://jwt.io/ in a new tab.
 - Paste the contents of the id_token into the website.
 - Examine the decoded contents
 
-_Note_:  The subject + issuer combined are considered the globally unique "identifier" for a given user.
-_Note_:  _NEVER_ enter tokens from a production environment into jwt.io unless such tokens are expired.
+_Note_: The subject + issuer combined are considered the globally unique "identifier" for a given user.
+_Note_: _NEVER_ enter tokens from a production environment into jwt.io unless such tokens are expired.
 
-## Step 5:  Evaluate if the token is signed
+## Step 5: Evaluate if the token is signed
 
 - Examine the decoded token header in jwt.io
   - Note that the "alg" parameter is RS256.
@@ -267,20 +266,20 @@ _Note_:  _NEVER_ enter tokens from a production environment into jwt.io unless s
   - Note the value of "kid" (key ID) for step 7.
 - Note that the "iss" (issuer) is different than the token endpoint.
 
-## Step 6:  Fetch the OpenID configuration document
+## Step 6: Fetch the OpenID configuration document
 
 - Append "/.well-known/openid-configuration" to the issuer value:
-  - https://authorization.sandboxcerner.com/tenants/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/oidc/idsps/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/.well-known/openid-configuration
+  - https://authorization.cerner.com/tenants/ec2458f2-1e24-41c8-b71b-0e701af7583d/oidc/idsps/ec2458f2-1e24-41c8-b71b-0e701af7583d/.well-known/openid-configuration
 - Paste this URL into a new tab in your browser.
 
-## Step 7:  Fetch the JSON Web Key Set document
+## Step 7: Fetch the JSON Web Key Set document
 
 - Note the URL in the field "jwks_uri" in the OpenID configuration document.
 - Paste this URL into a new tab in your browser.
 - Locate the RSA key with a key ID ("kid") matching that from step 5.
 - This is the key that would be utilized to verify the signed JSON Web Token.
 
-_Note_:  Many JWT libraries provide utilities to perform token signature verification and for parsing JSON Web Key Set documents. 
+_Note_: Many JWT libraries provide utilities to perform token signature verification and for parsing JSON Web Key Set documents.
 
 # Lab 7: Refresh Tokens
 
@@ -290,42 +289,42 @@ for an extended duration, or when an application needs to delegate
 a subset of its authorized scopes to a subsystem within the applications
 own architecture.
 
-## Step 1:  Prepare an authorization request with the online_access scope
+## Step 1: Prepare an authorization request with the online_access scope
 
-- Visit the following URL: https://authz-demo.sandboxcerner.com/client/demo?iss=https%3A%2F%2Ffhir-ehr.sandboxcerner.com%2Fdstu2%2F0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca
+- Visit the following URL: https://authz-demo.cerner.com/client/demo?iss=https%3A%2F%2Ffhir-ehr-code.cerner.com%2Fdstu2%2Fec2458f2-1e24-41c8-b71b-0e701af7583d
 - In section "1" of the demo application, click "Discover Authorization URLs".
 - In section "2" of the demo application, enter the scopes "user/Patient.read online_access"
 
-## Step 2:  Submit the authorization request
+## Step 2: Submit the authorization request
 
 - Click "Get Authorization Code".
 - If prompted, enter credentials.
 
-## Step 3:  Submit a token request
+## Step 3: Submit a token request
 
 - Click "Get Access Token"
 - Note the presence of "refresh_token" in the token response.
 - Note a "Refresh Access Token" button appears.
 
-## Step 4:  Submit a token refresh request
+## Step 4: Submit a token refresh request
 
 - Note the content of the current token response.
 - Click "Refresh Access Token"
 - Note that a new access token is returned with a new token response.
 
-## Step 5:  Trigger a "user log-out"
+## Step 5: Trigger a "user log-out"
 
 - In a separate tab, open the following URL:
-  - https://authorization.sandboxcerner.com/session-api/log-out
+  - https://authorization.cerner.com/session-api/log-out
 
-_Note_:  This is a private log-out mechanism, used by the authorization server to end a session, and not a contract offered by SMART.
+_Note_: This is a private log-out mechanism, used by the authorization server to end a session, and not a contract offered by SMART.
 
-## Step 6:  Submit a second token refresh request
+## Step 6: Submit a second token refresh request
 
 - Click "Refresh Access Token"
 - Note that the refresh fails.
 
-_Note_:  Existing access tokens are still valid until they expire.
+_Note_: Existing access tokens are still valid until they expire.
 
 # Lab 8: Exception Cases
 
@@ -333,12 +332,12 @@ This lab demonstrates a number of commonly-encountered error cases, and
 how the error response can be used to link a user to an appropriate
 error page with more information.
 
-## Step 1:  Make an authorization request without the required audience parameter
+## Step 1: Make an authorization request without the required audience parameter
 
 - In section 2, remove the "aud" parameter.
 - Click "Get Authorization Code".
 
-## Step 2:  Examine the authorization response
+## Step 2: Examine the authorization response
 
 - Note the x-www-form-urlencoded query parameters returned in response contain an error and error_uri.
 - Extract the error_uri parameter
@@ -349,25 +348,25 @@ error page with more information.
   - An error message for developers.
   - A "correlation ID" for assisting troubleshooting / diagnosis.
 
-## Step 3:  Submit a new authorization request
+## Step 3: Submit a new authorization request
 
 - In section "2" of the demo application, replace the value of "aud" with the following:
-  - https://fhir-ehr.sandboxcerner.com/dstu2/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca
+  - https://fhir-ehr-code.cerner.com/dstu2/ec2458f2-1e24-41c8-b71b-0e701af7583d
 - Click "Get Authorization Code"
 
-## Step 4:  Submit a token request, twice
+## Step 4: Submit a token request, twice
 
 - Click "Get Access Token".
 - Click "Get Access Token" a second time.
 - Note the error that returns.
 
-## Step 5:  Submit an authorization request specifying a redirect_uri
+## Step 5: Submit an authorization request specifying a redirect_uri
 
 - In section "2" of the demo application, replace the value of "redirect_uri" with the following:
-  - https://authz-demo.sandboxcerner.com/client/demo/cb?1=1
+  - https://authz-demo.cerner.com/client/demo/cb?1=1
 - Click "Get Authorization Code"
 - In section "2" of the demo application, replace the value of "redirect_uri" with the following:
-  - https://authz-demo.sandboxcerner.com/client/demo/cb/?1=1
+  - https://authz-demo.cerner.com/client/demo/cb/?1=1
   - Note the addition of a trailing space
 - Click "Get Authorization Code"
 - Note the error that an error page is presented directly to the user
